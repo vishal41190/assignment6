@@ -19,7 +19,7 @@ var randomAns;
 // and have it listen on port 3000
 app = express();
 
-http.createServer(app).listen(3000);
+http.createServer(app).listen(3010);
 //http://stackoverflow.com/questions/1527803/generating-random-numbers-in-javascript-in-a-specific-range
 function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
