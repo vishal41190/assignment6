@@ -30,7 +30,7 @@ function getRandomInt(min, max) {
 
 // set up our routes
 // for user login
-router.get("/rock", function (req, res) {
+router.post("/rock", function (req, res) {
 
    random = getRandomInt(0,4);       
         randomAns =   weapon[random];
@@ -59,7 +59,7 @@ router.get("/rock", function (req, res) {
      res.json({outcome:outcome, wins:wins,losses:losses,ties:ties});
     });
 
-router.get("/paper",function(req,res){
+router.post("/paper",function(req,res){
 
 random = getRandomInt(0,4);       
         randomAns =   weapon[random];
@@ -88,7 +88,7 @@ random = getRandomInt(0,4);
         res.json({outcome:outcome, wins:wins,losses:losses,ties:ties});
 });
     
-router.get("/scissors",function(req,res){
+router.post("/scissors",function(req,res){
     
      random = getRandomInt(0,4);       
         randomAns =   weapon[random];
@@ -117,7 +117,7 @@ router.get("/scissors",function(req,res){
          res.json({outcome:outcome, wins:wins,losses:losses,ties:ties});
 });
 
-router.get('/lizard',function(req,res){
+router.post('/lizard',function(req,res){
     random = getRandomInt(0,4);       
         randomAns =   weapon[random];
         switch(randomAns){
@@ -145,7 +145,7 @@ router.get('/lizard',function(req,res){
         res.json({outcome:outcome, wins:wins,losses:losses,ties:ties});
 });
 
-router.get('/spock',function(req,res){
+router.post('/spock',function(req,res){
      random = getRandomInt(0,4);       
         randomAns =   weapon[random];
         switch(randomAns){

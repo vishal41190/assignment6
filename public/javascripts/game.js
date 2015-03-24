@@ -6,7 +6,7 @@ var main = function () {
         
     $.ajax({
             
-            type: "GET",
+            type: "POST",
             url: "/play/rock",
             contentType: "application/json; charset=utf-8",
             dataType: "json"
@@ -42,7 +42,7 @@ var $button= $("#btnpaper");
         
     $.ajax({
             
-            type: "GET",
+            type: "POST",
             url: "/play/paper",
             contentType: "application/json; charset=utf-8",
             dataType: "json"
@@ -80,7 +80,7 @@ var $button= $("#btnscissors");
         
     $.ajax({
             
-            type: "GET",
+            type: "POST",
             url: "/play/scissors",
             contentType: "application/json; charset=utf-8",
             dataType: "json"
@@ -117,7 +117,7 @@ var $button= $("#btnlizard");
         
     $.ajax({
             
-            type: "GET",
+            type: "POST",
             url: "/play/lizard",
             contentType: "application/json; charset=utf-8",
             dataType: "json"
@@ -154,7 +154,7 @@ var $button= $("#btnspock");
         
     $.ajax({
             
-            type: "GET",
+            type: "POST",
             url: "/play/spock",
             contentType: "application/json; charset=utf-8",
             dataType: "json"
